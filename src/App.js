@@ -1,15 +1,22 @@
+import React from "react";
+import {
+  BrowserRouter as Router, Switch, Route, Link
+} from "react-router-dom";
+import Home from './pages/Home';
+import Login from './pages/Login';
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello</h1>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
+    </Router >
   );
 }
-
-export default App;
