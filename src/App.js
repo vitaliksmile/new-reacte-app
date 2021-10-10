@@ -5,18 +5,28 @@ import {
 import Home from './pages/Home';
 import Login from './pages/Login';
 import logo from './logo.svg';
-import './App.css';
-export default function App() {
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from "react-bootstrap";
+import NaviBar from "./components/Navibar";
+
+function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-      </Switch>
-    </Router >
+    <>
+      <NaviBar />
+      <Router>
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router >
+    </>
+
+
+
   );
 }
+export default App;
