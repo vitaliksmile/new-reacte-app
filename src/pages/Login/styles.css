@@ -1,0 +1,27 @@
+#login-page-root {
+    height: 100vh;
+    display: flex;
+}
+
+#login-page-root h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+#login-page-root .form-wrapper {
+    width: 300px;
+    margin: 200px auto 0;
+}
+
+#login-page-root .login-form {
+    padding: 16px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#login-page-root .login-form .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
